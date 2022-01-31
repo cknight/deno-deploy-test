@@ -1,5 +1,6 @@
-import { serve } from "https://deno.land/std@0.219.0/http/server.ts";
+import { serve } from "https://deno.land/std@0.114.0/http/server.ts";
 
+console.log(Deno.memoryUsage);
 console.log("Listening on http://localhost:8000");
 serve((_req: Request) => {
   return new Response("Hello World!", {
